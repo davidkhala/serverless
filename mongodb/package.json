@@ -9,7 +9,7 @@
     "test": "cloud test"
   },
   "devDependencies": {
-    "@serverless/cloud": "^2.0.0"
+    "@serverless/cloud": "latest"
   },
   "serverless": {
     "app": "mongodb",
