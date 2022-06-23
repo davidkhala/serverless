@@ -1,0 +1,24 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "Serverless Cloud MongoDB integration example",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cloud",
+    "test": "cloud test"
+  },
+  "devDependencies": {
+    "@serverless/cloud": "^2.0.0"
+  },
+  "serverless": {
+    "app": "mongodb",
+    "org": "davidkhala",
+    "params": {
+      "MONGO_URI": "MongoDB endpoint URI"
+    }
+  },
+  "dependencies": {
+    "mongodb": "^4.3.1"
+  }
+}
