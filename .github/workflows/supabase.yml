@@ -1,10 +1,10 @@
 on: push
 jobs:
-  common:
+  supabase:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ${{ matrix.dir }}
+        working-directory: supabase
     steps:
       - uses: actions/checkout@main
       - uses: actions/setup-node@main

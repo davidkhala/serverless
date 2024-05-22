@@ -27,7 +27,13 @@ export default class Supabase {
 		const {user} = data;
 		return user;
 	}
-
+	async getUser(uid){
+		const {data, error} =  await this.connection.auth.admin.getUserById(uid)
+		if (error) {
+			throw error;
+		}
+		return data.user;
+	}
 	async listUsers() {
 		const {data, error} = await this.connection.auth.admin.listUsers();
 		if (error) {
