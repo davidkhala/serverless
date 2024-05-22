@@ -1,0 +1,21 @@
+{
+  "name": "@davidkhala/supabase",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidkhala/serverless.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest"
+  },
+  "type": "module"
+}
